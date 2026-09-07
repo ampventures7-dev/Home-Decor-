@@ -1,0 +1,1 @@
+Cart state is intentionally kept in App.jsx for this lightweight client demo.

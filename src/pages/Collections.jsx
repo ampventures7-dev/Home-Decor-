@@ -1,0 +1,3 @@
+import CategoryCard from "../components/CategoryCard";
+import { categories } from "../data/products";
+export default function Collections(){ return <main className="container-page py-14 sm:py-20"><p className="eyebrow text-terracotta">COLLECTIONS</p><h1 className="display mt-3 text-7xl">Stories in Every Collection.</h1><p className="mt-5 max-w-xl text-sm leading-7 text-wood/60">A considered edit of handmade objects inspired by coastal life, Indian craft and the quiet beauty of Konkan.</p><div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{categories.map((c,i)=><CategoryCard key={c.slug} category={c} tall={i===0}/>)}</div></main> }

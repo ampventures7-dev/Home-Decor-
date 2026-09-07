@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #1D1B1A;
+  background: #FAF7F2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #FAF7F2;
+  color: #1D1B1A;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #A85C3A;
+  color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #2C1E18;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+  
+  .eyebrow {
+    @apply font-sans text-[10px] font-semibold tracking-[0.24em] uppercase text-terracotta;
+  }
+  
+  .display {
+    @apply font-serif;
+  }
+
+  /* Design System: Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-walnut text-offwhite px-6 py-3 text-[11px] font-semibold tracking-[0.18em] uppercase transition-all duration-200 hover:bg-terracotta hover:shadow-warm-md active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-secondary, .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-walnut/35 bg-transparent text-walnut px-6 py-3 text-[11px] font-semibold tracking-[0.18em] uppercase transition-all duration-200 hover:border-walnut hover:bg-walnut hover:text-offwhite active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 bg-terracotta text-white px-6 py-3 text-[11px] font-semibold tracking-[0.18em] uppercase transition-all duration-200 hover:bg-terracotta-dark hover:shadow-warm-md active:scale-[0.99] disabled:opacity-50;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-walnut px-4 py-2 text-[11px] font-medium tracking-[0.14em] uppercase transition hover:bg-beige/40 hover:text-terracotta;
+  }
+
+  /* Design System: Badges */
+  .badge-discount {
+    @apply inline-flex items-center gap-1 bg-terracotta text-offwhite text-[10px] font-semibold font-sans tracking-[0.12em] uppercase px-2.5 py-1 rounded-[1px] shadow-sm;
+  }
+
+  .badge-neutral {
+    @apply inline-flex items-center gap-1 bg-beige-light text-walnut-muted border border-beige-border text-[9px] font-semibold font-sans tracking-[0.15em] uppercase px-2 py-0.5 rounded-[1px];
+  }
+
+  .badge-dark {
+    @apply inline-flex items-center gap-1 bg-walnut text-brass-light text-[9px] font-semibold font-sans tracking-[0.16em] uppercase px-2.5 py-1 rounded-[1px];
+  }
+}
+
+/* 3D Perspective & Depth Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.card-3d-hover {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+
+.card-3d-hover:hover {
+  transform: perspective(1000px) rotateX(2deg) translateY(-6px) scale3d(1.015, 1.015, 1.015);
+  box-shadow: 0 20px 35px -10px rgba(45, 33, 27, 0.15);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #EAE5DC 25%, #F6F2EB 50%, #EAE5DC 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2.2s infinite ease-in-out;
+}
+
+.page-enter {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
