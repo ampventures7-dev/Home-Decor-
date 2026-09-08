@@ -1,6 +1,5 @@
 export const categories = [
   { name: "All", slug: "all" },
-  { name: "Sofas & Seating", slug: "sofas", image: "/images/categories/category-sofas.jpg" },
   { name: "Living Room", slug: "living", image: "/images/categories/category-living.jpg" },
   { name: "Bedroom Retreats", slug: "bedroom", image: "/images/categories/category-bedroom.jpg" },
   { name: "Dining & Feast Tables", slug: "dining", image: "/images/categories/category-dining.jpg" },
@@ -164,33 +163,33 @@ export const products = [
   },
   {
     id: 11,
-    name: "Aarambh Handcrafted Olive Teak & Wicker Sofa",
-    category: "Sofas",
+    name: "Aarambh Hand-Carved Fluted Teak Credenza",
+    category: "Living Room",
     price: 38900,
     originalPrice: 46500,
     discount: "16% OFF",
-    material: "Seasoned Teak & Natural Wicker Cane",
-    color: "Forest Jade",
+    material: "Seasoned Teak & Antique Brass",
+    color: "Warm Natural Teak",
     collection: "Malhar Atelier",
     rating: 4.9,
     reviews: 64,
     image: "/images/products/product-11.jpg",
-    description: "Architectural 2-seater lounge sofa crafted from seasoned teak with woven natural cane side inserts, upholstered in premium forest-olive linen weave and brass capped feet."
+    description: "Architectural solid teak sideboard credenza featuring handcrafted vertical fluted tambour doors, antique brass hardware, and warm natural grain."
   },
   {
     id: 12,
-    name: "Sylvan Ribbed Linen 3-Seater Sofa & Rattan Table",
+    name: "Sylvan Ribbed Teak Coffee Table & Urli Set",
     category: "Living Room",
-    price: 52400,
-    originalPrice: 62000,
-    discount: "15% OFF",
-    material: "Pure Linen & Seasoned Teak",
-    color: "Warm Beige",
+    price: 24400,
+    originalPrice: 29000,
+    discount: "16% OFF",
+    material: "Solid Teak & Hammered Brass",
+    color: "Natural Teak",
     collection: "Coastal Veranda",
     rating: 5.0,
     reviews: 48,
     image: "/images/products/product-12.jpg",
-    description: "Contemporary 3-seater luxury sofa featuring vertical fluted ribbed upholstery in warm earth taupe, paired with a matching artisanal oval cane-shelf coffee table."
+    description: "Artisanal low coffee table sculpted from seasoned teak with continuous fluted rib detailing, paired with an antique brass urli centerpiece."
   },
   {
     id: 13,

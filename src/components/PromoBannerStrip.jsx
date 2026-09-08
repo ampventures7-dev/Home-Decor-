@@ -41,7 +41,7 @@ export default function PromoBannerStrip() {
 
             <div className="pt-3 flex flex-wrap items-center gap-3">
               <Link
-                to="/shop?category=Sofas"
+                to="/shop?category=Living"
                 className="btn-accent py-3.5 px-7 text-[11px]"
               >
                 EXPLORE THE EDIT &rarr;

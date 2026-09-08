@@ -64,7 +64,7 @@ export default function Contact() {
       a: "All furniture is wrapped in non-abrasive soft padding, double-crated inside industrial wooden frames, and transported via dedicated white-glove logistics. Delivery includes unboxing and placement in your room of choice."
     },
     {
-      q: "Can I commission bespoke dimensions for sofas, daybeds, or dining tables?",
+      q: "Can I commission bespoke dimensions for lounge seating, daybeds, or dining tables?",
       a: "Yes. Because every piece is made by our master carpenters in Ganpatipule, we routinely customize dimensions, timber stains (natural teak, walnut, or smoked charcoal), and fabric choices to fit your room."
     },
     {

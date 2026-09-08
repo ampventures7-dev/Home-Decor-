@@ -4,14 +4,6 @@ import SafeImage from "./SafeImage";
 
 const categories = [
   {
-    name: "Sofas & Daybeds",
-    subtitle: "Teak frames & natural cane",
-    count: "18 pieces",
-    path: "/shop?category=Sofas",
-    image: "/images/categories/category-sofas.jpg",
-    dimensions: "500x500px"
-  },
-  {
     name: "Living Room",
     subtitle: "Coffee tables, consoles & armchairs",
     count: "32 pieces",

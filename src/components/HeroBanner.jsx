@@ -7,21 +7,11 @@ const slides = [
   {
     id: 1,
     tag: "SIGNATURE LIVING SANCTUARY",
-    headline: "Contemporary Comfort in Fluted Linen & Teak.",
-    subtext: "The Sylvan ribbed 3-seater sofa paired with an artisanal hand-woven rattan coffee table, bringing serene coastal elegance to your home.",
+    headline: "Serene Coastal Living in Fluted Teak.",
+    subtext: "Artisanal fluted teak coffee tables and credenzas paired with hammered brass accents, bringing handcrafted elegance to your home.",
     primaryCta: { text: "EXPLORE LIVING SUITE", link: "/product/12" },
     secondaryCta: { text: "SHOP LIVING ROOM", link: "/shop?category=Living" },
     image: "/images/hero/hero-banner-1.jpg",
-    dimensions: "1920x800px"
-  },
-  {
-    id: 2,
-    tag: "KONKAN ATELIER SEATING",
-    headline: "The Aarambh Handcrafted Olive Teak & Cane Sofa.",
-    subtext: "Architectural solid teak frame with airy woven wicker sides, forest-olive linen upholstery, and solid brass detailing.",
-    primaryCta: { text: "VIEW OLIVE CANE SOFA", link: "/product/11" },
-    secondaryCta: { text: "EXPLORE ALL SOFAS", link: "/shop?category=Sofas" },
-    image: "/images/hero/hero-banner-2.jpg",
     dimensions: "1920x800px"
   },
   {

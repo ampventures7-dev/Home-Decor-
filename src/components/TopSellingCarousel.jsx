@@ -9,7 +9,7 @@ const topSellingItems = [
   {
     id: 101,
     name: "Handcrafted Teak Daybed",
-    category: "Sofas & Seating",
+    category: "Living Room",
     price: 24990,
     originalPrice: 29990,
     discount: "17% OFF",

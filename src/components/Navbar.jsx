@@ -22,49 +22,6 @@ import DiscountBadge from "./DiscountBadge";
 // Mega-Menu Category Data with Subcategories and Promo Image Slots
 export const megaMenuData = [
   {
-    id: "sofas",
-    title: "Sofas",
-    path: "/shop?category=Sofas",
-    columns: [
-      {
-        heading: "By Seating Type",
-        items: [
-          { name: "3-Seater Sofas", path: "/shop?category=Sofas" },
-          { name: "2-Seater Loveseats", path: "/shop?category=Sofas" },
-          { name: "L-Shaped Sectionals", path: "/shop?category=Sofas" },
-          { name: "Daybeds & Divans", path: "/shop?category=Sofas" },
-          { name: "Recliners & Chaise", path: "/shop?category=Sofas" }
-        ]
-      },
-      {
-        heading: "Artisan Materials",
-        items: [
-          { name: "Seasoned Teak Wood", path: "/shop?category=Sofas" },
-          { name: "Konkan Cane & Wicker", path: "/shop?category=Sofas" },
-          { name: "Pure Linen Upholstery", path: "/shop?category=Sofas" },
-          { name: "Handloom Cotton Weaves", path: "/shop?category=Sofas" }
-        ]
-      },
-      {
-        heading: "Curated Collections",
-        items: [
-          { name: "Ganpatipule Heritage", path: "/shop?category=Sofas" },
-          { name: "Coastal Veranda Lounge", path: "/shop?category=Sofas" },
-          { name: "Minimalist Japandi-Konkan", path: "/shop?category=Sofas" },
-          { name: "New Workshop Arrivals", path: "/shop?category=Sofas" }
-        ]
-      }
-    ],
-    promo: {
-      image: "/images/categories/mega-sofas.jpg",
-      dimensions: "320x220px",
-      badge: "LIMITED CRAFT",
-      title: "Aarambh Olive Teak & Cane Sofa",
-      subtitle: "Solid teak frame with hand-woven cane & olive linen weave",
-      link: "/product/11"
-    }
-  },
-  {
     id: "living",
     title: "Living",
     path: "/shop?category=Living",
@@ -101,8 +58,8 @@ export const megaMenuData = [
       image: "/images/categories/mega-living.jpg",
       dimensions: "320x220px",
       badge: "BESTSELLER",
-      title: "Sylvan Ribbed Linen Lounge Suite",
-      subtitle: "Contemporary fluted upholstery with woven cane table",
+      title: "Ribbed Teak Coffee Table & Sideboard",
+      subtitle: "Hand-carved architectural fluting with antique brass accents",
       link: "/product/12"
     }
   },
@@ -436,7 +393,7 @@ export default function Navbar({ cartCount = 0, wishlistCount = 1 }) {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search handcrafted sofas, wall art, dining tables, urns..."
+                placeholder="Search handcrafted decor, wall art, dining tables, urns..."
                 className="w-full bg-beige-light/70 border border-beige-border focus:border-walnut px-4 py-2.5 pl-10 pr-24 text-xs font-sans text-charcoal placeholder-charcoal/45 rounded-[2px] outline-none transition-all focus:bg-white focus:shadow-warm-sm"
               />
               <Search
